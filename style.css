@@ -139,7 +139,7 @@ hr {
     height: 100%;
     width: 100%;
     background-color: rgba(28, 28, 30, 0.2);
-    z-index: 1;
+    z-index: -1;
     pointer-events: none;
 }
 
@@ -233,6 +233,14 @@ hr {
 
 /* SERVICES */
 
+#services .container {
+    padding: 24px;
+}
+
+#services .section__h1 {
+    padding-bottom: 12px;
+}
+
 .service {
     border: solid black 2px;
     border-radius: 4px;
@@ -243,7 +251,7 @@ hr {
 .services {
     display: flex;
     justify-content: space-between;
-    padding: 24px 132px;
+    padding: 0 128px;
 }
 
 .service__name {
@@ -279,6 +287,32 @@ hr {
 
 /* REVIEWS */
 
+#reviews {
+    background-image: url('./assets/reviewsbg.webp');
+    background-size: cover;
+    background-position: center 65%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#reviews::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(28, 28, 30, 0.6);
+    z-index: -1;
+    pointer-events: none;
+}
+
 #reviews .section__h1 {
     color: #FFB400;
+}
+
+#reviews .container {
+    padding-top: 24px;
 }
