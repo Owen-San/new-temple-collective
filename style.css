@@ -94,7 +94,7 @@ li {
 }
 
 .nav__header {
-    padding-left: 190px;
+    padding-left: 180px;
     font-size: 64px;
     font-weight: bold;
     font-style: italic;
@@ -127,7 +127,7 @@ li {
 
 .nav__link--primary {
     border-radius: 300px;
-    background-color: #4B4B4F;
+    background-color: #131313;
     padding: 12px 40px;
     transition: all ease-in-out 0.3s;
 }
@@ -142,7 +142,7 @@ li {
     display: none;
     background-color: transparent;
     font-size: 32px;
-    color: black;
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
 }
@@ -318,6 +318,15 @@ li {
     justify-content: space-between;
 }
 
+#about .section__para {
+    background-color: rgba(44, 44, 46, 0.6);
+    padding: 16px 24px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .about__img {
     height: 480px;
     padding-right: 120px;
@@ -378,6 +387,7 @@ li {
 .service__description {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: 18px;
     color: #A1A1A1;
 }
@@ -455,6 +465,7 @@ li {
 
 #contact .section__h1 {
     display: flex;
+    text-align: center;
 }
 
 #contact .row {
@@ -464,6 +475,11 @@ li {
 
 #contact .section__para {
     padding-bottom: 4px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .contact__description {
@@ -490,6 +506,11 @@ label {
     font-size: 24px;
     font-weight: bold;
     font-style: italic;
+    text-shadow: 
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
 }
 
 .contact__me input,
@@ -528,7 +549,12 @@ label {
     justify-content: center;
     padding-top: 32px;
     gap: 40px;
-    font-size: 40px;
+    font-size: 64px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .contact__h2 {
@@ -613,6 +639,10 @@ label {
         background-attachment: scroll;
     }
 
+    #landing .container {
+        height: 376px;
+    }
+
     #services .container {
         padding-top: 16px;
     }
@@ -631,6 +661,10 @@ label {
         align-items: center;
         justify-content: space-between;
         padding: 16px;
+    }
+
+    #about .section__para {
+        font-size: 16px;
     }
 
     .nav__logo {
@@ -688,7 +722,7 @@ label {
         display: none;
     }
 
-    .nav__link {
+    .footer__link {
         display: none;
     }
 
