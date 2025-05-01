@@ -94,6 +94,7 @@ li {
 }
 
 .nav__header {
+    padding-left: 190px;
     font-size: 64px;
     font-weight: bold;
     font-style: italic;
@@ -356,7 +357,8 @@ li {
     justify-content: center;
     flex-wrap: wrap;
     gap: 64px;
-    padding: 0 16px 18px;
+    padding-bottom: 18px;
+    max-width: 100%;
 }
 
 .service__name {
@@ -622,6 +624,7 @@ label {
         display: block;
         width: 60px;
         height: auto;
+        margin-left: 24px;
     }
 
     .nav__header {
@@ -645,8 +648,8 @@ label {
   
     .services {
       flex-direction: column;
-      padding: 0 24px;
-      gap: 24px;
+      align-items: center;
+      padding: 0 12px;
     }
   
     .contact__description {
@@ -671,6 +674,7 @@ label {
         display: block;
         font-size: 28px;
         margin-left: auto;
+        margin-right: 24px;
     }
   
     iframe {
