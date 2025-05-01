@@ -608,6 +608,10 @@ label {
         background-attachment: scroll;
     }
 
+    #services .container {
+        padding: 0;
+    }
+
     .row {
       flex-direction: column;
       align-items: center;
@@ -648,7 +652,6 @@ label {
     .services {
       flex-direction: column;
       align-items: center;
-      padding: auto;
     }
   
     .contact__description {
