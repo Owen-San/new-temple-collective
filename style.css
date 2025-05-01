@@ -68,6 +68,14 @@ hr {
     background: linear-gradient(to right, transparent, #FFB400, transparent);
 }
 
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 /* NAV */
 
 #nav {
@@ -125,6 +133,79 @@ hr {
 
 .nav__link--primary:hover {
     background-color: #6E6E74;
+}
+
+/* MOBILE MENU */
+
+.btn__menu {
+    display: none;
+    background-color: transparent;
+    font-size: 32px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+  
+.menu__backdrop {
+    position: fixed;
+    background-color: #2C2F33;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+  
+.menu--open .menu__backdrop {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+  
+.menu--open {
+      max-height: 100vh; 
+      overflow-y: hidden;
+}
+  
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.menu__link {
+    color: #E4E6EB;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 0;
+    text-decoration: none;
+    transition: color 300ms ease;
+}
+  
+.menu__link:hover {
+    color: #FFB400;
+}
+  
+.menu__list {
+    padding: 32px 0;
+}
+  
+.btn__menu--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: #E4E6EB;
+    cursor: pointer;
 }
 
 /* LANDING */
@@ -529,6 +610,25 @@ label {
       flex-direction: column;
       align-items: center;
     }
+
+    #nav .row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    .nav__logo {
+        display: block;
+        width: 60px;
+        height: auto;
+    }
+
+    .nav__header {
+        font-size: 28px;
+        flex: 1;
+        text-align: center;
+    }
   
     .section__h1 {
       font-size: 36px;
@@ -560,12 +660,17 @@ label {
   
     .nav__header {
       font-size: 36px;
+      padding: 0 !important;
     }
-  
+
     .nav__links {
-      gap: 16px;
-      flex-wrap: wrap;
-      justify-content: center;
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+        font-size: 28px;
+        margin-left: auto;
     }
   
     iframe {
@@ -588,10 +693,6 @@ label {
     }
 
     .nav__links {
-        display: none;
-    }
-
-    .nav__logo {
         display: none;
     }
 

@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/626ee27be3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
     <title>New Temple</title>
   </head>
   <body>
@@ -22,6 +23,9 @@
             />
           </figure>
           <div class="nav__header">New Temple</div>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
           <div class="nav__links">
             <a href="" class="nav__link">Home</a>
             <a href="" class="nav__link">Blog</a>
@@ -33,6 +37,26 @@
             >
           </div>
         </div>
+      </div>
+      <div class="menu__backdrop">
+        <button class="btn_menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()"
+              >Blog</a
+            >
+          </li>
+          <li class="menu__list">
+            <a href="#contact" class="menu__link no-cursor" onclick="closeMenu()"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
     <hr />
