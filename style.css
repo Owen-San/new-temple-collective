@@ -196,13 +196,22 @@ hr {
 /* ABOUT */
 
 #about {
-    background-image: url('./assets/frankievid.gif');
     background-size: cover;
     background-position: center 65%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     position: relative;
     z-index: 1;
+}
+
+.about__bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
 }
 
 #about::before {
@@ -213,8 +222,13 @@ hr {
     height: 100%;
     width: 100%;
     background-color: rgba(28, 28, 30, 0.6);
-    z-index: -1;
+    z-index: 1;
     pointer-events: none;
+}
+
+#about .container {
+    position: relative;
+    z-index: 2;
 }
 
 #about .row {
@@ -247,10 +261,13 @@ hr {
 }
 
 .service {
+    width: 364px;
     border: solid black 2px;
     border-radius: 4px;
     background-color: #2C2C2E;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .services {
@@ -288,7 +305,14 @@ hr {
 .service__img {
     width: 360px;
     height: 360px;
-    border: solid black 2px;
+    display: block;
+    border: none;
+    padding: 0 !important;
+}
+
+.service:hover {
+    transform: translateY(-4px);
+    transition: transform 0.2s ease-in-out;
 }
 
 /* REVIEWS */
