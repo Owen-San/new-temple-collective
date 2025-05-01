@@ -463,7 +463,7 @@ li {
 }
 
 #contact .section__para {
-    padding-bottom: 24px;
+    padding-bottom: 4px;
 }
 
 .contact__description {
@@ -615,6 +615,10 @@ label {
 
     #services .container {
         padding-top: 16px;
+    }
+
+    #services .section__h1 {
+        padding-top: 8px;
     }
 
     .row {
