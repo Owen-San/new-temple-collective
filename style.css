@@ -136,7 +136,7 @@ hr {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(28, 28, 30, 0.5);
+    background-color: rgba(28, 28, 30, 0.2);
     z-index: 1;
     pointer-events: none;
 }
@@ -490,6 +490,16 @@ label {
 /* TABLET */
 
 @media (max-width: 768px) {
+
+    #landing,
+    #about,
+    #reviews,
+    #contact {
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
+    }
+
     .row {
       flex-direction: column;
       align-items: center;
@@ -543,6 +553,15 @@ label {
 
 @media (max-width: 480px) {
 
+    #landing,
+    #about,
+    #reviews,
+    #contact {
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
+    }
+
     .nav__links {
         display: none;
     }
@@ -579,6 +598,10 @@ label {
 
     .section__h1 {
       font-size: 32px;
+    }
+
+    #reviews .section__h1 {
+        padding: 12px 0;
     }
   
     .section__h2,
