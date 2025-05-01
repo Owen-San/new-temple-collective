@@ -420,3 +420,16 @@ label {
     display: flex;
     justify-content: center;
 }
+
+/* FIND__ME */
+
+#find__me .section__h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.video__wrapper {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+}
