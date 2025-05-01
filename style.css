@@ -272,9 +272,10 @@ hr {
 
 .services {
     display: flex;
-    justify-content: space-between;
-    padding: 0 128px;
-    padding-bottom: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px;
+    padding: 0 16px 18px;
 }
 
 .service__name {
