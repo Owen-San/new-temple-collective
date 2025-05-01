@@ -328,6 +328,7 @@ li {
 #about .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #about .section__para {
