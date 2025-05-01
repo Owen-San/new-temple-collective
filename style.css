@@ -648,7 +648,7 @@ label {
     .services {
       flex-direction: column;
       align-items: center;
-      padding: 0 12px;
+      padding: auto;
     }
   
     .contact__description {
