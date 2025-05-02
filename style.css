@@ -639,6 +639,29 @@ label {
     opacity: 1;
 }
 
+@media (max-width: 1200px) {
+    #contact .row {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 24px;
+      gap: 32px;
+    }
+  
+    .contact__description {
+      text-align: center;
+      padding: 0;
+    }
+  
+    .contact__form {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .contact__me {
+      padding: 0;
+    }
+}
+
 /* TABLET */
 
 @media (max-width: 768px) {
