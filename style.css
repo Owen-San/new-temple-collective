@@ -661,6 +661,10 @@ label {
     .contact__me {
       padding: 0;
     }
+
+    .landing__img {
+        display: none;
+    }
 }
 
 /* TABLET */
@@ -704,6 +708,17 @@ label {
         font-size: 16px;
     }
 
+    #about .row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about__img {
+        padding-right: 0;
+        padding-top: 24px;
+    }
+
     #find__me .container {
         padding: 24px;
     }
@@ -738,11 +753,15 @@ label {
     .about__img {
         width: 100%;
         padding: 0;
-        padding-bottom: 24px;
+        padding: 18px;
     }
 
     #about .section__para {
         font-size: 20px;
+    }
+
+    #about .container {
+        padding: 24px;
     }
 
     .video__wrapper {
@@ -835,8 +854,6 @@ label {
 
     .about__img {
         width: 100%;
-        padding: 0;
-        padding-bottom: 24px;
     }
 
     #about .container {
