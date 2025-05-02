@@ -51,6 +51,7 @@ section:nth-of-type(even) {
 .section__h2, span {
     color: #A1A1A1;
     background: linear-gradient(135deg, #1A1A1D, #101013);
+    text-align: center;
 }
 
 .section__para {
