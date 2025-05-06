@@ -665,6 +665,29 @@ label {
     .landing__img {
         display: none;
     }
+
+    .btn__menu {
+        display: block;
+        font-size: 28px;
+        margin-left: auto;
+        padding-right: 24px;
+    }
+
+    .nav__link {
+        display: none;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .footer__link {
+        display: none;
+    }
+
+    .nav__header {
+        padding-right: 240px;
+    }
 }
 
 /* TABLET */
