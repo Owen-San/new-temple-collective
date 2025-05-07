@@ -888,7 +888,8 @@ label {
     #landing,
     #about,
     #reviews,
-    #contact {
+    #contact,
+    .blog-post {
         background-size: cover;
         background-position: center top;
         background-attachment: scroll;
@@ -1040,7 +1041,8 @@ label {
     #landing,
     #about,
     #reviews,
-    #contact {
+    #contact,
+    .blog-post {
         background-size: cover;
         background-position: center top;
         background-attachment: scroll;
