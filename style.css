@@ -77,6 +77,15 @@ li {
     list-style: none;
 }
 
+.nav__header a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+  
+  .nav__header a:visited {
+    color: #F5F5F5;
+}
+  
 /* NAV */
 
 #nav {
