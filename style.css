@@ -650,8 +650,8 @@ label {
     padding-top: 16px;
 }
 
-#blog-post .container,
-#blog-post .row {
+.blog-post .container,
+.blog-post .row {
     position: relative;
     z-index: 2;
 }
@@ -697,7 +697,7 @@ label {
     transform: scale(1.05);
 }
 
-#blog-post {
+.blog-post {
     position: relative;
     z-index: 0;
     background-image: url('./assets/blogs/blog_bg1.webp');
@@ -707,7 +707,47 @@ label {
     background-attachment: fixed;
 }
 
-#blog-post::before {
+.blog-post--private {
+    position: relative;
+    z-index: 0;
+    background-image: url('./assets/blogs/blog_bg2.webp');
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.blog-post--secret {
+    position: relative;
+    z-index: 0;
+    background-image: url('./assets/blogs/blog_bg3.webp');
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.blog-post--local {
+    position: relative;
+    z-index: 0;
+    background-image: url('./assets/blogs/blog_bg4.webp');
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.blog-post--oils {
+    position: relative;
+    z-index: 0;
+    background-image: url('./assets/blogs/blog_bg5.webp');
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.blog-post::before {
     content: "";
     position: absolute;
     top: 0;
@@ -719,7 +759,7 @@ label {
     pointer-events: none;
 }
 
-#blog-post .section__para {
+.blog-post .section__para {
     background-color: rgba(44, 44, 46, 0.6);
     padding: 16px 24px;
     border-radius: 12px;
@@ -728,7 +768,12 @@ label {
     margin: 0 auto;
 }
 
-#blog-post .section__h2,
+.blog-post .section__h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.blog-post .section__h2,
 .section__para {
     max-width: 800px;
     width: 100%;
@@ -738,7 +783,7 @@ label {
     border-radius: 8px;
 }
 
-#blog-post .section__h2 {
+.blog-post .section__h2 {
     color: #F5F5F5;
     font-size: 24px;
     display: flex;
