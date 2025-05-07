@@ -908,10 +908,9 @@ label {
     .blog-post--oils,
     .blog-post--private,
     .blog-post--secret {
-        background-size: cover !important;
-        background-position: center top !important;
-        background-attachment: scroll !important;
-        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
     }
 
     #landing .container {
@@ -1071,10 +1070,9 @@ label {
     .blog-post--oils,
     .blog-post--private,
     .blog-post--secret {
-        background-size: cover !important;
-        background-position: center top !important;
-        background-attachment: scroll !important;
-        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
     }
       
 
