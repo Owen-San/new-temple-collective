@@ -898,7 +898,11 @@ label {
     #about,
     #reviews,
     #contact,
-    .blog-post {
+    .blog-post,
+    .blog-post--local,
+    .blog-post--oils,
+    .blog-post--private,
+    .blog-post--secret {
         background-size: cover;
         background-position: center top;
         background-attachment: scroll;
@@ -1051,7 +1055,11 @@ label {
     #about,
     #reviews,
     #contact,
-    .blog-post {
+    .blog-post,
+    .blog-post--local,
+    .blog-post--oils,
+    .blog-post--private,
+    .blog-post--secret {
         background-size: cover;
         background-position: center top;
         background-attachment: scroll;
