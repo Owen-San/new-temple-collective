@@ -897,15 +897,20 @@ label {
     #landing,
     #about,
     #reviews,
-    #contact,
+    #contact {
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
+    }
+
     .blog-post,
     .blog-post--local,
     .blog-post--oils,
     .blog-post--private,
     .blog-post--secret {
-        background-size: cover;
-        background-position: center top;
-        background-attachment: scroll;
+        background-size: 100% auto !important;
+        background-position: top center !important;
+        background-attachment: scroll !important;
     }
 
     #landing .container {
@@ -1054,16 +1059,22 @@ label {
     #landing,
     #about,
     #reviews,
-    #contact,
+    #contact {
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
+    }
+
     .blog-post,
     .blog-post--local,
     .blog-post--oils,
     .blog-post--private,
     .blog-post--secret {
-        background-size: cover;
-        background-position: center top;
-        background-attachment: scroll;
+        background-size: 100% auto !important;
+        background-position: top center !important;
+        background-attachment: scroll !important;
     }
+      
 
     .nav__links {
         display: none;
