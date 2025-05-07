@@ -650,6 +650,12 @@ label {
     padding-top: 16px;
 }
 
+#blog-post .container,
+#blog-post .row {
+    position: relative;
+    z-index: 2;
+}
+
 .blog__cards {
     display: flex;
     justify-content: center;
