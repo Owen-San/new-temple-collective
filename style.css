@@ -832,6 +832,16 @@ label {
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
+    #landing,
+    #about,
+    #reviews,
+    #contact {
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
     #contact .row {
       flex-direction: column;
       align-items: center;
