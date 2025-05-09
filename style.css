@@ -85,7 +85,7 @@ hr {
   text-decoration: none;
 }
 
-/* BACKGROUND SECTION DEFAULTS */
+/* BACKGROUND SECTION DEFAULTS
 
 #landing,
 #about,
@@ -96,7 +96,7 @@ hr {
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
-}
+} */
   
 /* NAV */
 
@@ -287,6 +287,13 @@ hr {
     color: #F5F5F5;
     border-radius: 300px;
     padding: 16px;
+}
+
+.landing__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
   
 .landing__img {
@@ -855,16 +862,7 @@ label {
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px), (orientation: landscape) {
-    #landing,
-    #about,
-    #reviews,
-    #contact {
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-    }
-
+    
     #contact .row {
       flex-direction: column;
       align-items: center;
@@ -917,10 +915,6 @@ label {
       padding: 0;
     }
   
-    .landing__img {
-      display: none;
-    }
-  
     .nav__link,
     .nav__links,
     .footer__link {
@@ -937,6 +931,31 @@ label {
       background-size: cover;
       background-position: center top;
       background-attachment: scroll;
+    }
+
+    #landing .container {
+        height: 380px;
+    }
+
+    .nav__header {
+        padding-right: 40px;
+    }
+
+    .nav__logo {
+        width: 68px;
+        height: 64px;
+    }
+
+    .container {
+        padding: 32px;
+    }
+
+    .section__h1 {
+        font-size: 38px;
+    }
+
+    .landing__img {
+        display: none;
     }
 
     .contact__me {
