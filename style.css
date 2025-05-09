@@ -337,6 +337,7 @@ li {
 
 #about .row {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -389,9 +390,10 @@ li {
 }
   
   #about .section__h2 {
-    font-size: 22px;
+    font-size: 28px;
     margin-top: 8px;
-    max-width: 90%;
+    max-width: 100%;
+    padding: 0 12px;
 }
 
 /* SERVICES */
@@ -883,7 +885,7 @@ label {
       align-items: center;
       justify-content: space-between;
       padding: 16px;
-      flex-wrap: nowrap; /* prevents wrapping */
+      flex-wrap: nowrap;
       gap: 16px;
     }
   
@@ -986,7 +988,7 @@ label {
     }
 
     #about .row {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
