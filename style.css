@@ -1019,6 +1019,10 @@ label {
         padding: 18px;
     }
 
+    .about__img--container {
+        padding: 0;
+    }
+
     #about .section__para {
         font-size: 20px;
     }
@@ -1128,6 +1132,10 @@ label {
 
     .about__img {
         width: 320px;
+    }
+
+    .about__img--container {
+        padding: 0;
     }
 
     #about .container {
