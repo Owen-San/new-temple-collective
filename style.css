@@ -84,6 +84,19 @@ hr {
   color: #F5F5F5;
   text-decoration: none;
 }
+
+/* BACKGROUND SECTION DEFAULTS */
+
+#landing,
+#about,
+#reviews,
+#contact {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
   
 /* NAV */
 
@@ -841,12 +854,12 @@ label {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (orientation: landscape) {
     #landing,
     #about,
     #reviews,
     #contact {
-        background-size: contain;
+        background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
         background-attachment: scroll;
