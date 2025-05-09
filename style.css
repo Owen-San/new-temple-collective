@@ -599,11 +599,21 @@ label {
 }
   
 .video__wrapper {
-    padding-top: 32px;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 32px;
 }
-  
+
+.video__wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* FOOTER */
   
 .footer__social--list {
@@ -915,6 +925,16 @@ label {
       background-position: center top;
       background-attachment: scroll;
     }
+
+    .contact__me {
+        padding: 0 24px;
+    }
+    
+      .contact__me input,
+      .contact__me textarea {
+        width: 100%;
+        max-width: 100%;
+    }
 }
   
 @media (max-width: 480px), (orientation: landscape) {
@@ -926,5 +946,9 @@ label {
       background-size: cover;
       background-position: center top;
       background-attachment: scroll;
+    }
+
+    .contact__me {
+        padding: 0 16px;
     }
 }
