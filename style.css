@@ -697,6 +697,10 @@ label {
     padding-top: 16px;
 }
 
+.blog-post .nav__link--blog {
+    display: inline-block;
+}
+
 .blog-post .container,
 .blog-post .row {
     position: relative;
