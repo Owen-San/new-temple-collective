@@ -15,6 +15,7 @@ html {
 
 body {
   background: #1C1C1E;
+  overflow-x: hidden;
 }
 
 .container {
@@ -505,6 +506,13 @@ hr {
 }
 
 /* CONTACT */
+
+.contact__me input::placeholder,
+.contact__me textarea::placeholder {
+    text-align: center;
+    color: #aaa;
+    opacity: 1;
+}
 
 #contact {
     background-image: url('./assets/undraw_barber_utly.svg');

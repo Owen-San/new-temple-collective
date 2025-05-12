@@ -106,37 +106,37 @@
       <div class="container">
         <div class="row">
           <div class="about__img--container">
-          <!-- <figure class="about__img--wrapper">
+            <!-- <figure class="about__img--wrapper">
             <img src="./assets/aboutimg1.avif" alt="" class="about__img" />
           </figure> -->
-        </div>
-        <div class="section__description">
-          <h1 class="section__h1">About New Temple</h1>
-          <p class="section__para">
-            Welcome to New Temple Collective, your exclusive retreat for
-            styling and rejuvenation. Within these walls, it's not just about
-            haircuts; it's about crafting an individual narrative for each
-            client. New Temple Collective was born from a moment of
-            transforming stress into art during a spontaneous haircut for a
-            friend. <br /><br />In this intimate setting, you're
-            not just a client; you're a part of a unique story. Every trim and
-            style is meticulously tailored to reflect your style and bring
-            forth a sense of relaxation. Experience the art of styling in
-            solitude, where the focus is entirely on you. Welcome to the
-            essence of New Temple Collective, where your distinct journey
-            converges with the art of personal styling.
-          </p>
-        </div>
-        <div class="social__links social__links--about">
-          <a href="https://www.instagram.com/frisco_k_i_d"
-            ><i class="fa-brands fa-instagram" style="color: #ffd43b"></i
-          ></a>
-          <!-- <a href="https://www.tiktok.com/@friscokid360?_t=8jdwwlUUQg7&_r=1"
+          </div>
+          <div class="section__description">
+            <h1 class="section__h1">About New Temple</h1>
+            <p class="section__para">
+              Welcome to New Temple Collective, your exclusive retreat for
+              styling and rejuvenation. Within these walls, it's not just about
+              haircuts; it's about crafting an individual narrative for each
+              client. New Temple Collective was born from a moment of
+              transforming stress into art during a spontaneous haircut for a
+              friend. <br /><br />In this intimate setting, you're not just a
+              client; you're a part of a unique story. Every trim and style is
+              meticulously tailored to reflect your style and bring forth a
+              sense of relaxation. Experience the art of styling in solitude,
+              where the focus is entirely on you. Welcome to the essence of New
+              Temple Collective, where your distinct journey converges with the
+              art of personal styling.
+            </p>
+          </div>
+          <div class="social__links social__links--about">
+            <a href="https://www.instagram.com/frisco_k_i_d"
+              ><i class="fa-brands fa-instagram" style="color: #ffd43b"></i
+            ></a>
+            <!-- <a href="https://www.tiktok.com/@friscokid360?_t=8jdwwlUUQg7&_r=1"
             ><i class="fa-brands fa-tiktok" style="color: #ffd43b"></i
           ></a> -->
+          </div>
+          <h2 class="section__h2">Check out my IG!</h2>
         </div>
-        <h2 class="section__h2">Check out my IG!</h2>
-      </div>
       </div>
     </section>
     <hr />
@@ -231,13 +231,34 @@
             </div>
           </div>
           <div class="contact__form">
-            <form action="" class="contact__me">
-              <label>Name</label>
-              <input type="text" />
-              <label>Email</label>
-              <input type="email" />
-              <label>Message</label>
-              <textarea rows="10"></textarea>
+            <form
+              action="https://formspree.io/f/mwporqjl"
+              method="POST"
+              class="contact__me"
+            >
+              <label for="name">Name*</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="email@example.com"
+              />
+
+              <label for="message">Message*</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                required
+              ></textarea>
+
+              <!-- Honeypot to catch bots -->
+              <input type="text" name="_gotcha" style="display: none" />
+
               <button type="submit" class="contact__submit">
                 Send Message
               </button>
