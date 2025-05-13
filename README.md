@@ -18,7 +18,7 @@ This site was hand-coded using HTML, CSS, and JavaScript with a focus on smooth 
 
 ## 🌐 Live Site
 
-Coming soon — will update once deployed.
+[New Temple Collective](https://newtemplecollective.com/)
 
 ---
 
