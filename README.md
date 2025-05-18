@@ -26,7 +26,7 @@ This site was hand-coded using HTML, CSS, and JavaScript with a focus on smooth 
 
 **Owen Sanchez**  
 [GitHub Profile](https://github.com/Owen-San)  
-[LinkedIn](https://www.linkedin.com/in/owen-sanchez-0b9964358/)  
+[LinkedIn](https://www.linkedin.com/in/owen-san/)  
 Frontend Developer & Freelancer
 
 ---
